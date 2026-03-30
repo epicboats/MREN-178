@@ -1,0 +1,12 @@
+101 Laptop 1 50 100
+101 Laptop 2 30 100
+102 Phone 1 5 200
+102 Phone 2 150 200
+103 Tablet 1 2 150
+103 Tablet 2 0 150
+104 Monitor 1 75 100
+104 Monitor 2 90 100
+105 Keyboard 1 10 80
+105 Keyboard 2 5 80
+106 Mouse 1 25 100
+106 Mouse 2 15 100
