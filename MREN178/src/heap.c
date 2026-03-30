@@ -48,7 +48,7 @@ Product* extractMin() {
 }
 
 void restockRecommendations() {
-    printf("\n--- Restock Priority ---\n");
+    printf("\nRestock Priority\n");
 
     while (heap.size > 0) {
         Product* p = extractMin();
