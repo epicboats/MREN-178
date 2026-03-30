@@ -21,7 +21,7 @@ void commandLineInterface() {
 
             Product* p = findProduct(pid, loc);
             if (p)
-                printf("Product: %s | Qty: %d | Location: %d\n",
+                printf("Product: %s  Qty: %d  Location: %d\n",
                        p->name, p->quantity, p->location_id);
             else
                 printf("Product not found\n");
