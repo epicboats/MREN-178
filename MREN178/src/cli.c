@@ -3,6 +3,7 @@
 #include "hashmap.h"
 #include "transactions.h"
 #include "heap.h"
+#include "fileio.h"
 
 void commandLineInterface() {
     char command[50];
