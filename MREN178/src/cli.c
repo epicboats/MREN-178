@@ -99,6 +99,7 @@ void commandLineInterface() {
 
         else if (strcmp(command, "EXIT") == 0) {
             saveProducts("C:\\Users\\junon\\OneDrive\\Documents\\MREN178\\data\\products.txt");
+            saveTransactionLog("C:\\Users\\junon\\OneDrive\\Documents\\MREN178\\data\\transactions.txt");
             printf("Exiting and saving data...\n");
             break;
         }
