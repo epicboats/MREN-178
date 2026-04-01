@@ -48,3 +48,30 @@ void loadTransactions(const char* filename) {
 
     fclose(f);
 }
+
+void saveProducts(const char* filename) {
+    FILE* f = fopen(filename, "w");
+
+    if (!f) {
+        printf("Error saving products file\n");
+        return;
+    }
+
+    for (int i = 0; i < TABLE_SIZE; i++) {
+        Product* temp = hashTable[i];
+
+        while (temp) {
+            fprintf(f, "%d %s %d %d %d\n",
+                    temp->product_id,
+                    temp->name,
+                    temp->location_id,
+                    temp->quantity,
+                    temp->max_capacity);
+
+            temp = temp->next;
+        }
+    }
+
+    fclose(f);
+    printf("Data saved to file.\n");
+}
