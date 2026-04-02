@@ -44,7 +44,7 @@ Product* findProduct(int pid, int loc) {
 }
 
 void printInventory() {
-    printf("\n--- Inventory ---\n");
+    printf("\nInventory\n");
 
     for (int i = 0; i < TABLE_SIZE; i++) {
         Product* temp = hashTable[i];
