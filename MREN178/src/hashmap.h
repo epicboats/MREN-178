@@ -1,6 +1,3 @@
-#ifndef HASHMAP_H
-#define HASHMAP_H
-
 #define TABLE_SIZE 100003
 #define MAX_NAME 50
 
@@ -28,5 +25,3 @@ extern Product* hashTable[TABLE_SIZE];
 void insertProduct(int pid, char* name, int loc, int qty, int max);
 Product* findProduct(int pid, int loc);
 void printInventory();
-
-#endif
