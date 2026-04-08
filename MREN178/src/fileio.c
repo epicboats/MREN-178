@@ -20,35 +20,6 @@ void loadProducts(const char* filename) {
     fclose(f);
 }
 
-void loadTransactions(const char* filename) {
-    FILE* f = fopen(filename, "r");
-    if (!f) {
-        printf("Error opening transactions file\n");
-        return;
-    }
-
-    char type[20];
-    int pid, loc1, loc2, qty;
-
-    while (fscanf(f, "%s", type) != EOF) {
-
-        if (strcmp(type, "RESTOCK") == 0) {
-            fscanf(f, "%d %d %d", &pid, &loc1, &qty);
-            processRestock(pid, loc1, qty);
-        }
-        else if (strcmp(type, "SHIP") == 0) {
-            fscanf(f, "%d %d %d", &pid, &loc1, &qty);
-            processShip(pid, loc1, qty);
-        }
-        else if (strcmp(type, "TRANSFER") == 0) {
-            fscanf(f, "%d %d %d %d", &pid, &loc1, &loc2, &qty);
-            processTransfer(pid, loc1, loc2, qty);
-        }
-    }
-
-    fclose(f);
-}
-
 void saveProducts(const char* filename) {
     FILE* f = fopen(filename, "w");
 
