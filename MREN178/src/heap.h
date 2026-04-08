@@ -1,6 +1,3 @@
-#ifndef HEAP_H
-#define HEAP_H
-
 #include "hashmap.h"
 
 typedef struct {
@@ -13,5 +10,3 @@ extern MinHeap heap;
 void heapInsert(Product* p);
 Product* extractMin();
 void restockRecommendations();
-
-#endif
