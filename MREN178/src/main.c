@@ -12,7 +12,6 @@ int main() {
     heap.size = 0;
 
     loadProducts("C:\\Users\\junon\\OneDrive\\Documents\\MREN178\\data\\products.txt");
-    loadTransactions("C:\\Users\\junon\\OneDrive\\Documents\\MREN178\\data\\transactions.txt");
 
     commandLineInterface();
 
